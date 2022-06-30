@@ -49,7 +49,7 @@
     "jquery": "2.1.4",
     "place-my-order-api": "^0.4.4",
     "place-my-order-assets": "^0.1.6",
-    "steal": "^0.13.0"
+    "steal": "^1.0.0"
   },
   "devDependencies": {
     "can-fixture": "^0.1.0",
