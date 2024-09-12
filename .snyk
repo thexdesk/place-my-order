@@ -1,0 +1,27 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hoek:20180212':
+    - can-ssr > steal > less > request > hawk > hoek:
+        patched: '2024-09-12T01:02:45.843Z'
+        id: 'npm:hoek:20180212'
+        path: can-ssr > steal > less > request > hawk > hoek
+    - can-ssr > steal > less > request > hawk > boom > hoek:
+        patched: '2024-09-12T01:02:45.843Z'
+        id: 'npm:hoek:20180212'
+        path: can-ssr > steal > less > request > hawk > boom > hoek
+    - can-ssr > steal > less > request > hawk > sntp > hoek:
+        patched: '2024-09-12T01:02:45.843Z'
+        id: 'npm:hoek:20180212'
+        path: can-ssr > steal > less > request > hawk > sntp > hoek
+    - can-ssr > steal > less > request > hawk > cryptiles > boom > hoek:
+        patched: '2024-09-12T01:02:45.843Z'
+        id: 'npm:hoek:20180212'
+        path: can-ssr > steal > less > request > hawk > cryptiles > boom > hoek
+  'npm:lodash:20180130':
+    - can-ssr > najax > lodash:
+        patched: '2024-09-12T01:02:45.843Z'
+        id: 'npm:lodash:20180130'
+        path: can-ssr > najax > lodash
