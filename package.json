@@ -14,7 +14,9 @@
     "develop": "can-serve --develop --proxy http://localhost:7070 --port 8080",
     "document": "documentjs",
     "build": "node build",
-    "api": "place-my-order-api --port 7070"
+    "api": "place-my-order-api --port 7070",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "main": "place-my-order/index.stache!done-autorender",
   "files": [
@@ -45,11 +47,12 @@
     "done-autorender": "^0.6.0",
     "done-component": "^0.4.0",
     "done-css": "~1.1.13",
-    "generator-donejs": "^0.4.3",
+    "generator-donejs": "^3.0.0",
     "jquery": "2.1.4",
     "place-my-order-api": "^0.4.4",
     "place-my-order-assets": "^0.1.6",
-    "steal": "^0.13.0"
+    "steal": "^0.13.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "can-fixture": "^0.1.0",
@@ -60,5 +63,6 @@
     "steal-qunit": "^0.1.1",
     "steal-tools": "^0.13.0",
     "testee": "^0.2.4"
-  }
+  },
+  "snyk": true
 }
